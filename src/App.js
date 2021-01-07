@@ -1,11 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import JumbotronComponent from "./JumbotronComponent";
+import UserForm from "./UserForm";
 
 function App() {
   return (
     <div>
-      <JumbotronComponent />
+      <UserForm />
     </div>
   );
 }
