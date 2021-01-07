@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "./Product";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 function Products() {
   const getProducts = () => {
@@ -43,7 +43,11 @@ function Products() {
 
   return (
     <div>
-      <ul>{listProducts}</ul>
+      {listProducts.length > 0 ? (
+        <ul>{listProducts}</ul>
+      ) : (
+        <ul>No products to display</ul>
+      )}
     </div>
   );
 }
