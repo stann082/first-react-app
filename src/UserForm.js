@@ -10,7 +10,7 @@ function UserForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     var emailValid = false;
-    if (email.length == 0) {
+    if (email.length === 0) {
       setEmailError("Email is required");
     } else if (email.length < 6) {
       setEmailError("Email should be a minimum of 6 chars");
@@ -22,7 +22,7 @@ function UserForm() {
     }
 
     var passwordValid = false;
-    if (password.length == 0) {
+    if (password.length === 0) {
       setPasswordError("Password is required");
     } else if (password.length < 6) {
       setPasswordError("Password should be a minimum of 6 chars");
